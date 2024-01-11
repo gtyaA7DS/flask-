@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>🤔🤔</title>
+
+
+<style>
+	.jump-text{
+	   font: 40px "微软雅黑"; /*设置字体和字体大小*/
+	   margin:20px auto; /*设置元素外边距*/
+	   font-weight: 800; /*设置字体粗细*/
+	   text-align: center; /*设置文字居中*/
+	   color: #cb1a1a; /*设置文字颜色*/
+
+	}
+
+</style>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/templatemo-style.css') }}">
+
+
+</head>
+
+<body>
+
+
+
+
+<div class="container-fluid">
+
+
+
+
+	<div class="row">
+
+		<section class="tm-2-col-img-text tm-2-col-img-lg-right">
+
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-2-col-img">
+				<img src="{{  url_for('static',filename='8.jpeg') }}" alt="Image" class="img-fluid">
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-2-col-text">
+				<h1 class="jump-text">TO {{ receve if receve else '' }}</h1>
+				<h2 class="tm-2-col-text-title">{{ title if title else '' }}</h2>
+				<p class="tm-2-col-text-description">
+
+					{{ note  if note else ''}}
+				</p>
+				<a href="/" class="tm-bordered-btn">send more </a>
+			</div>
+
+		</section>
+
+	</div> <!-- row -->
+
+
+	<!-- About -->
+
+
+
+
+
+</div> <!-- container-fluid -->
+
+
+
+</body>
+</html>

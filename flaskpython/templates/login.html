@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>😋😋😋😋😋😋</title>
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=RobotoDraft:300,500">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/account.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/default.css') }}">
+
+	<style>
+		body {
+			background-image: url('{{ url_for('static',filename='44.jpeg') }}');
+			background-size: cover;
+			background-repeat: no-repeat;
+			/* 其他样式设置... */
+		}
+	</style>
+</head>
+<body>
+
+		<div class="login">
+
+			<div class="photo">
+				<img src="{{ url_for('static',filename='88.jpg') }}" alt="用户头像">
+			</div>
+			<span>Sign in </span>
+			<form action="/login" id="login-form" method="post">
+
+				<div id="p" class="form-group">
+				  <input id="password" class="form-control" spellcheck=false name="password" type="password" size="18" alt="login" required>
+
+				  <label for="password" class="float-label">Password</label>
+
+				</div>
+				<div class="form-group">
+				<button id="submit" type="submit" ripple>Sign in</button>
+				</div>
+			</form>
+		</div>
+
+
+
+
+</body>
+</html>
